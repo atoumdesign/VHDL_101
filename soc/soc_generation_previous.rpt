@@ -1,0 +1,119 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate E:\repos\FPGA\ASP4\multi_vhdl\soc.qsys --block-symbol-file --output-directory=E:\repos\FPGA\ASP4\multi_vhdl\soc --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading multi_vhdl/soc.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 21.1]
+Progress: Parameterizing module clk
+Progress: Adding cpu [altera_nios2_gen2 21.1]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 21.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding multi_native_0 [multi_native 1.0]
+Progress: Parameterizing module multi_native_0
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 21.1]
+Progress: Parameterizing module onchip_memory
+Progress: Adding performance_counter [altera_avalon_performance_counter 21.1]
+Progress: Parameterizing module performance_counter
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 21.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: soc.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: soc.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate E:\repos\FPGA\ASP4\multi_vhdl\soc.qsys --synthesis=VHDL --output-directory=E:\repos\FPGA\ASP4\multi_vhdl\soc\synthesis --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading multi_vhdl/soc.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 21.1]
+Progress: Parameterizing module clk
+Progress: Adding cpu [altera_nios2_gen2 21.1]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 21.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding multi_native_0 [multi_native 1.0]
+Progress: Parameterizing module multi_native_0
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 21.1]
+Progress: Parameterizing module onchip_memory
+Progress: Adding performance_counter [altera_avalon_performance_counter 21.1]
+Progress: Parameterizing module performance_counter
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 21.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: soc.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: soc.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: soc: Generating soc "soc" for QUARTUS_SYNTH
+Info: cpu: "soc" instantiated altera_nios2_gen2 "cpu"
+Info: jtag_uart: Starting RTL generation for module 'soc_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/intelfpga_lite/21.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/21.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/21.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/21.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/21.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=soc_jtag_uart --dir=C:/Users/atoum/AppData/Local/Temp/alt9061_8029868150342656995.dir/0034_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/21.1/quartus --verilog --config=C:/Users/atoum/AppData/Local/Temp/alt9061_8029868150342656995.dir/0034_jtag_uart_gen//soc_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'soc_jtag_uart'
+Info: jtag_uart: "soc" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: multi_native_0: "soc" instantiated multi_native "multi_native_0"
+Info: onchip_memory: Starting RTL generation for module 'soc_onchip_memory'
+Info: onchip_memory:   Generation command is [exec C:/intelfpga_lite/21.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/21.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/21.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/21.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/21.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=soc_onchip_memory --dir=C:/Users/atoum/AppData/Local/Temp/alt9061_8029868150342656995.dir/0036_onchip_memory_gen/ --quartus_dir=C:/intelfpga_lite/21.1/quartus --verilog --config=C:/Users/atoum/AppData/Local/Temp/alt9061_8029868150342656995.dir/0036_onchip_memory_gen//soc_onchip_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory: Done RTL generation for module 'soc_onchip_memory'
+Info: onchip_memory: "soc" instantiated altera_avalon_onchip_memory2 "onchip_memory"
+Info: performance_counter: Starting RTL generation for module 'soc_performance_counter'
+Info: performance_counter:   Generation command is [exec C:/intelfpga_lite/21.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/21.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/21.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/21.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/21.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_performance_counter -- C:/intelfpga_lite/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_performance_counter/generate_rtl.pl --name=soc_performance_counter --dir=C:/Users/atoum/AppData/Local/Temp/alt9061_8029868150342656995.dir/0037_performance_counter_gen/ --quartus_dir=C:/intelfpga_lite/21.1/quartus --verilog --config=C:/Users/atoum/AppData/Local/Temp/alt9061_8029868150342656995.dir/0037_performance_counter_gen//soc_performance_counter_component_configuration.pl  --do_build_sim=0  ]
+Info: performance_counter: Done RTL generation for module 'soc_performance_counter'
+Info: performance_counter: "soc" instantiated altera_avalon_performance_counter "performance_counter"
+Info: sysid_qsys: "soc" instantiated altera_avalon_sysid_qsys "sysid_qsys"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "soc" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "soc" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "soc" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'soc_cpu_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/21.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/21.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/21.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/21.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=soc_cpu_cpu --dir=C:/Users/atoum/AppData/Local/Temp/alt9061_8029868150342656995.dir/0041_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/21.1/quartus/bin64/ --verilog --config=C:/Users/atoum/AppData/Local/Temp/alt9061_8029868150342656995.dir/0041_cpu_gen//soc_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2022.03.10 20:55:55 (*) Starting Nios II generation
+Info: cpu: # 2022.03.10 20:55:55 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2022.03.10 20:55:55 (*)   Creating all objects for CPU
+Info: cpu: # 2022.03.10 20:55:56 (*)   Generating RTL from CPU objects
+Info: cpu: # 2022.03.10 20:55:56 (*)   Creating plain-text RTL
+Info: cpu: # 2022.03.10 20:55:57 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'soc_cpu_cpu'
+Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
+Info: multi_native_0_avalon_slave_0_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "multi_native_0_avalon_slave_0_burst_adapter"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_004: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_004"
+Info: Reusing file E:/repos/FPGA/ASP4/multi_vhdl/soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file E:/repos/FPGA/ASP4/multi_vhdl/soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file E:/repos/FPGA/ASP4/multi_vhdl/soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: multi_native_0_avalon_slave_0_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "multi_native_0_avalon_slave_0_rsp_width_adapter"
+Info: Reusing file E:/repos/FPGA/ASP4/multi_vhdl/soc/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file E:/repos/FPGA/ASP4/multi_vhdl/soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: soc: Done "soc" with 34 modules, 55 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
